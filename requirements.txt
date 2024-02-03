@@ -1,0 +1,10 @@
+pandas
+scikit-learn
+numpy
+
+
+
+
+
+#-e . # this is run when when we cannnot run setup.py.
+#if we run python setup.py install command when we cannot use -e . in requirements.txt.
