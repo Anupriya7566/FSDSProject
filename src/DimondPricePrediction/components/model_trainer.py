@@ -1,5 +1,4 @@
 #ingest the data
-
 import pandas as pd
 import numpy as np
 import os
@@ -7,7 +6,6 @@ import sys
 from src.DimondPricePrediction.logger import logging
 from src.DimondPricePrediction.exception import customexception
 from dataclasses import dataclass
-
 from src.DimondPricePrediction.utils.utils import save_object
 from src.DimondPricePrediction.utils.utils import evaluate_model
 
@@ -71,11 +69,3 @@ class ModelTrainer:
         
     
 
-
-
-class ModelTrainer:
-    def __init__(self):
-        pass
-    
-    def initiate_model_training(self):
-        pass
