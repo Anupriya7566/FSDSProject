@@ -14,8 +14,8 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
       name: Check out code
-    - uses: actions/checkout@v2
-    - name: Install Utilities
+      uses: actions/checkout@v2
+      name: Install Utilities
       run:
          sudo apt-get update
          sudo apt-get install -y jq unzip
@@ -24,7 +24,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID}}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
-        aws-region: us-east-1
+        aws-region: eu-north-1
       name: Login to Amazon ECR
       id: login.ecr
       uses: aws.actions/amazon-ecr-login@v1
